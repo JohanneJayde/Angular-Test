@@ -11,4 +11,8 @@ export class PhotoService {
   getPhotos(): Observable<any> {
     return this.http.get<any>('https://jsonplaceholder.typicode.com/photos');
   }
+
+  getPhoto(): Observable<any> {
+    return this.http.get<any>('https://picsum.photos/200');
+  }
 }

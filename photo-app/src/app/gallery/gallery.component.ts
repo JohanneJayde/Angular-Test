@@ -18,7 +18,7 @@ export class GalleryComponent {
 
   ngOnInit() {
     this.photoService.getPhotos().subscribe((photos) => {
-      this.photos = photos;
+      this.photos = photos.slice(0, 10);
     });
   }
 }
