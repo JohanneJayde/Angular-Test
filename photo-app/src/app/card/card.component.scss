@@ -1,0 +1,18 @@
+mat-card {
+  background-color: var(--mat-primary);
+  width: 400px;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+mat-card-header {
+  background-color: green;
+}
+
+mat-card-title {
+  color: white;
+}
+
+mat-card-subtitle {
+  color: white;
+}
