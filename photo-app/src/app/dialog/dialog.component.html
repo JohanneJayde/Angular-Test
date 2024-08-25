@@ -1,4 +1,7 @@
 <mat-dialog-content>
-  <p>{{ data.title }}</p>
-  <button mat-button (click)="closeDialog()">Close</button>
+  <h4>{{ data.title }}</h4>
+  <img [src]="data.url" alt="Photo of a Shiba Inu" />
 </mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</mat-dialog-actions>

@@ -29,14 +29,15 @@ import { DialogComponent } from '../dialog/dialog.component';
 })
 export class CardComponent {
   @Input() title: string = '';
-  imageUrl: string = '';
+  @Input() url: string = '';
+  @Input() detailUrl: string = '';
   readonly dialog = inject(MatDialog);
 
   openDialog() {
     this.dialog.open(DialogComponent, {
       data: {
         title: this.title,
-        imageUrl: this.imageUrl,
+        url: this.url,
       },
     });
   }

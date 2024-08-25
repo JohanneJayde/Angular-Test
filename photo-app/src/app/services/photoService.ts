@@ -9,7 +9,7 @@ export class PhotoService {
   constructor(private http: HttpClient) {}
 
   getPhotos(): Observable<any> {
-    return this.http.get<any>('https://jsonplaceholder.typicode.com/photos');
+    return this.http.get<any>('https://picsum.photos/v2/list?page=3&limit=10');
   }
 
   getPhoto(): Observable<any> {

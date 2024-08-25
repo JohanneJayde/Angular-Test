@@ -1,6 +1,10 @@
 <h2>Welcome to the Gallery!</h2>
 <div class="photo-card-container">
   @for (photo of photos; track photo.id){
-  <app-card [title]="photo.title" />
+  <app-card
+    [title]="photo.author"
+    [url]="photo.download_url"
+    [detailUrl]="photo.url"
+  />
   }
 </div>

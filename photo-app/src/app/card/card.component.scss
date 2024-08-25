@@ -1,16 +1,20 @@
 mat-card {
-  background-color: var(--mat-primary);
-  width: 400px;
-  height: 200px;
   border: 1px solid grey;
   border-radius: 6px;
 }
 mat-card-header {
-  background-color: green;
+  background-color: rgb(67, 100, 198);
+  padding-bottom: 1em;
 }
 
 mat-card-title {
   color: white;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
 }
 
 mat-card-subtitle {

@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import {
   MAT_DIALOG_DATA,
+  MatDialogActions,
   MatDialogContent,
   MatDialogRef,
 } from '@angular/material/dialog';
@@ -9,7 +10,7 @@ import {
 @Component({
   selector: 'app-dialog',
   standalone: true,
-  imports: [MatDialogContent, MatButton],
+  imports: [MatDialogContent, MatButton, MatDialogActions],
   templateUrl: './dialog.component.html',
   styleUrl: './dialog.component.scss',
 })
