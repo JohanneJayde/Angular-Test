@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GalleryComponent } from './lorem-picsum.component';
+import { LoremPicsumComponent } from './lorem-picsum.component';
 
-describe('GalleryComponent', () => {
-  let component: GalleryComponent;
-  let fixture: ComponentFixture<GalleryComponent>;
+describe('LoremPicsumComponent', () => {
+  let component: LoremPicsumComponent;
+  let fixture: ComponentFixture<LoremPicsumComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GalleryComponent],
+      imports: [LoremPicsumComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GalleryComponent);
+    fixture = TestBed.createComponent(LoremPicsumComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

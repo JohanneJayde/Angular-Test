@@ -12,8 +12,6 @@ import { PhotoService } from '../services/photoService';
 export class LoremPicsumComponent {
   constructor(private photoService: PhotoService) {}
 
-  name: string = 'GalleryComponent';
-
   photos: any[] = [];
 
   ngOnInit() {

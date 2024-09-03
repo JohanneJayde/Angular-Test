@@ -29,5 +29,8 @@ export interface NavLinks {
 export class AppComponent {
   title = 'photo-app';
 
-  Links: NavLinks[] = [{ name: 'Lorem Picsum', link: '/LoremPicsum' }];
+  Links: NavLinks[] = [
+    { name: 'Lorem Picsum', link: '/LoremPicsum' },
+    { name: 'Dog CEO API', link: '/DogCeoApi' },
+  ];
 }

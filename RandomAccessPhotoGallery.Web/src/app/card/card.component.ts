@@ -1,14 +1,8 @@
 import { Component, inject, Input } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { MatCardImage, MatCardModule } from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { PhotoService } from '../services/photoService';
-import {
-  MatDialog,
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogTitle,
-} from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { AlertDialogComponent } from '../alert-dialog/alert-dialog.component';
 
@@ -18,11 +12,7 @@ import { AlertDialogComponent } from '../alert-dialog/alert-dialog.component';
   imports: [
     MatCardModule,
     MatButton,
-    MatCardImage,
-    MatDialogTitle,
-    MatDialogContent,
-    MatDialogActions,
-    MatDialogClose,
+    MatDialogModule,
     DialogComponent,
     AlertDialogComponent,
   ],
