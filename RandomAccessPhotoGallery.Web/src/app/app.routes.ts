@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { LoremPicsumComponent } from './lorem-picsum/lorem-picsum.component';
 
 export const routes: Routes = [
   {
@@ -9,8 +9,8 @@ export const routes: Routes = [
     title: 'Home',
   },
   {
-    path: 'gallery',
-    component: GalleryComponent,
-    title: 'Gallery',
+    path: 'LoremPicsum',
+    component: LoremPicsumComponent,
+    title: 'Lorem Picsum',
   },
 ];

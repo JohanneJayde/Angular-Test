@@ -4,6 +4,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+
+export interface NavLinks {
+  name: string;
+  link: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -15,10 +21,13 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
+    MatListModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'photo-app';
+
+  Links: NavLinks[] = [{ name: 'Lorem Picsum', link: '/LoremPicsum' }];
 }

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GalleryComponent } from './gallery.component';
+import { GalleryComponent } from './lorem-picsum.component';
 
 describe('GalleryComponent', () => {
   let component: GalleryComponent;
@@ -8,10 +8,9 @@ describe('GalleryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GalleryComponent]
-    })
-    .compileComponents();
-    
+      imports: [GalleryComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GalleryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

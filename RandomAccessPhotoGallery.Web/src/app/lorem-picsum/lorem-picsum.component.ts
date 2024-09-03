@@ -3,13 +3,13 @@ import { CardComponent } from '../card/card.component';
 import { PhotoService } from '../services/photoService';
 
 @Component({
-  selector: 'app-gallery',
+  selector: 'app-lorem-picsum',
   standalone: true,
   imports: [CardComponent],
-  templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.scss',
+  templateUrl: './lorem-picsum.component.html',
+  styleUrl: './lorem-picsum.component.scss',
 })
-export class GalleryComponent {
+export class LoremPicsumComponent {
   constructor(private photoService: PhotoService) {}
 
   name: string = 'GalleryComponent';

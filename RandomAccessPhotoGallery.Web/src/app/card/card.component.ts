@@ -10,6 +10,7 @@ import {
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
+import { AlertDialogComponent } from '../alert-dialog/alert-dialog.component';
 
 @Component({
   selector: 'app-card',
@@ -23,6 +24,7 @@ import { DialogComponent } from '../dialog/dialog.component';
     MatDialogActions,
     MatDialogClose,
     DialogComponent,
+    AlertDialogComponent,
   ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
@@ -33,11 +35,19 @@ export class CardComponent {
   @Input() detailUrl: string = '';
   readonly dialog = inject(MatDialog);
 
-  openDialog() {
+  openImageDialog() {
     this.dialog.open(DialogComponent, {
       data: {
         title: this.title,
         url: this.url,
+      },
+    });
+  }
+  openRedirectDialog() {
+    this.dialog.open(AlertDialogComponent, {
+      data: {
+        link: this.detailUrl,
+        message: 'Are you sure you want to leave RAPG?',
       },
     });
   }

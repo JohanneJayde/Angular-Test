@@ -1,0 +1,9 @@
+<mat-dialog-content>
+  <h4>{{ data.message }}</h4>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+  <a mat-flat-button color="primary" [href]="data.link" target="_blank"
+    >Confirm</a
+  >
+</mat-dialog-actions>

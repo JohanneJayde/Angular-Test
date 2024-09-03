@@ -1,16 +1,23 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button (click)="sidenav.toggle()">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span class="app--mat-toolbar-title" routerLink="/">My Photo App</span>
-  <span class="example-spacer"></span>
-  <button mat-button routerLink="/gallery">Gallery</button>
-</mat-toolbar>
 <mat-sidenav-container color="blue">
-  <mat-sidenav #sidenav mode="side" class="mat-elevation-z8"
-    >Text !!</mat-sidenav
-  >
+  <mat-sidenav #sidenav mode="side">
+    <mat-nav-list>
+      @for (link of Links; track Links) {
+      <mat-list-item [routerLink]="link.link">
+        <div matListItemTitle>{{ link.name }}</div>
+      </mat-list-item>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
   <mat-sidenav-content class="sidenav-container">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="app--mat-toolbar-title" routerLink="/">
+        Random Access Photo Gallery
+      </span>
+    </mat-toolbar>
+
     <router-outlet />
   </mat-sidenav-content>
 </mat-sidenav-container>
